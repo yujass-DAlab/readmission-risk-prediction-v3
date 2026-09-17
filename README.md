@@ -1,5 +1,7 @@
 # Readmission Risk Screening API — V3
 
+URL: http://18.222.170.48:8000/docs
+
 An end-to-end **healthcare ML engineering project** that predicts hospital readmission risk and exposes the model through a cloud-deployed FastAPI service.
 
 > ⚠️ **Screening/portfolio project — not a diagnostic or clinical decision-support tool.**
@@ -127,12 +129,6 @@ The Swagger interface includes preloaded LOW / MODERATE / HIGH demonstration cas
 ---
 
 ## 🖥️ Screenshots
-URL(This URL could change if instance restarts/stop)                             What it shows
-http://18.222.170.48:8000/docs	                                                 Swagger UI — the interactive demo with preloaded test cases
-http://18.222.170.48:8000/health	                                               Health check JSON (status, version, threshold, etc.)
-http://18.222.170.48:8000/	                                                     Root endpoint (brief overview)
-http://18.222.170.48:8000/predict	                                               Prediction endpoint — POST only (use /docs instead)
-
 
 ![Readmission V3 Swagger overview](screenshots/readmission-v3-overview.png)
 
