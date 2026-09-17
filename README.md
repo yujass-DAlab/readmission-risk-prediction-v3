@@ -1,3 +1,6 @@
+<img width="799" height="908" alt="readmission_v3UI3" src="https://github.com/user-attachments/assets/d8ca26f2-7bd6-4137-9a05-7d8d5ec0ec9c" />
+<img width="540" height="702" alt="readmission_v3UI4" src="https://github.com/user-attachments/assets/ca2d76c0-49e3-4c77-ad61-601be8fee6cb" />
+<img width="1399" height="717" alt="V3-AWS-Deployment" src="https://github.com/user-attachments/assets/0ac2718b-5480-456e-9301-48cb47c1221a" />
 # Readmission Risk Screening API — V3
 
 URL: http://18.222.170.48:8000/docs
