@@ -128,7 +128,9 @@ The Swagger interface includes preloaded LOW / MODERATE / HIGH demonstration cas
 
 ## 🖥️ Screenshots
 
-### Swagger API — Overview
+### Swagger API — Overview<img width="540" height="702" alt="readmission_v3UI4" src="https://github.com/user-attachments/assets/1850f189-b0bd-4368-8806-16a3e4e5777b" />
+
+<img width="1399" height="717" alt="V3-AWS-Deployment" src="https://github.com/user-attachments/assets/8e8a4c3d-841d-4236-b821-650d16504253" />
 
 ![Readmission V3 Swagger overview](screenshots/readmission-v3-overview.png)
 
@@ -140,7 +142,6 @@ The Swagger interface includes preloaded LOW / MODERATE / HIGH demonstration cas
 
 ![Readmission V3 health endpoint](screenshots/readmission-v3-health.png)
 
-> Screenshots show the locally tested V3 API interface. The AWS deployment will use the same application architecture and endpoints.
 
 ---
 
