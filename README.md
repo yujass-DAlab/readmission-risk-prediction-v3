@@ -127,18 +127,18 @@ The Swagger interface includes preloaded LOW / MODERATE / HIGH demonstration cas
 ---
 
 ## 🖥️ Screenshots
+URL(This URL could change if instance restarts/stop)                             What it shows
+http://18.222.170.48:8000/docs	                                                 Swagger UI — the interactive demo with preloaded test cases
+http://18.222.170.48:8000/health	                                               Health check JSON (status, version, threshold, etc.)
+http://18.222.170.48:8000/	                                                     Root endpoint (brief overview)
+http://18.222.170.48:8000/predict	                                               Prediction endpoint — POST only (use /docs instead)
 
-### Swagger API — Overview<img width="540" height="702" alt="readmission_v3UI4" src="https://github.com/user-attachments/assets/1850f189-b0bd-4368-8806-16a3e4e5777b" />
-
-<img width="1399" height="717" alt="V3-AWS-Deployment" src="https://github.com/user-attachments/assets/8e8a4c3d-841d-4236-b821-650d16504253" />
 
 ![Readmission V3 Swagger overview](screenshots/readmission-v3-overview.png)
 
-### `/predict` — Prediction Interface
 
 ![Readmission V3 prediction endpoint](screenshots/readmission-v3-predict.png)
 
-### `/health` — Operational Health
 
 ![Readmission V3 health endpoint](screenshots/readmission-v3-health.png)
 
