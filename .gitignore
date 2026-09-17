@@ -1,0 +1,40 @@
+# --- Secrets (NEVER commit) ---
+*.pem
+.aws/
+credentials
+.env
+*.key
+
+# --- Large model / data files ---
+*.pkl
+*.h5
+*.onnx
+*.pt
+*.pth
+readmission_data.csv
+*.csv
+!sample_requests/*.json
+
+# --- Python environment ---
+venv/
+env/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# --- Colab / Jupyter ---
+.ipynb_checkpoints/
+*.ipynb
+
+# --- OS clutter ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp

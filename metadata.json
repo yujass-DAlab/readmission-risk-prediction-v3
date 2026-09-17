@@ -1,0 +1,280 @@
+{
+  "version": "v3",
+  "extractor_version": "v3",
+  "feature_schema_hash": "ae6dcfe4775ebc8a",
+  "features": 25,
+  "feature_names": [
+    "age",
+    "num_meds",
+    "num_labs",
+    "num_diag",
+    "out_vis",
+    "em_vis",
+    "in_vis",
+    "num_proc",
+    "LOS",
+    "insulin_change",
+    "diabetic_med_change",
+    "any_diabetic_med",
+    "admission_type",
+    "gender",
+    "race",
+    "total_visits",
+    "med_per_day",
+    "high_utilization",
+    "age_med_interaction",
+    "acute_ratio",
+    "icd9_group",
+    "age_bin",
+    "med_per_diag",
+    "lab_med_ratio",
+    "visit_intensity"
+  ],
+  "alert_threshold": 0.07177707522737586,
+  "prediction_time_point": "discharge",
+  "prediction_time_note": "V3 predicts at discharge. Features like LOS, num_meds, num_labs, num_proc assume post-admission information. Admission-time prediction would require removing these features (V4).",
+  "validation_recall": 0.8506588579795022,
+  "validation_precision": 0.12423378474697078,
+  "test_precision": 0.12352523098791755,
+  "test_recall": 0.8482186432406051,
+  "test_f1": 0.21564613189403808,
+  "test_specificity": 0.24199397627389513,
+  "test_pr_auc": 0.1619039200546511,
+  "test_alert_rate": 0.7680969538159188,
+  "test_macro_f1": 0.21162864011525948,
+  "experiment_b_pr_auc_lift": {
+    "test_class2_prevalence": 0.11185718964952505,
+    "test_pr_auc": 0.1619039200546511,
+    "test_pr_auc_lift_over_random": 1.447416304324597
+  },
+  "experiment_a_threshold_sweep": [
+    {
+      "threshold": 0.05,
+      "recall": 0.9731576378721327,
+      "precision": 0.11545365062822072,
+      "f1": 0.20641821946169772,
+      "alert_rate": 0.9428431051424828
+    },
+    {
+      "threshold": 0.1,
+      "recall": 0.6559297218155198,
+      "precision": 0.13601862159700434,
+      "f1": 0.225314333612741,
+      "alert_rate": 0.5394147832732831
+    },
+    {
+      "threshold": 0.15,
+      "recall": 0.39824304538799415,
+      "precision": 0.156411730879816,
+      "f1": 0.22460776218001652,
+      "alert_rate": 0.2848018342613822
+    },
+    {
+      "threshold": 0.2,
+      "recall": 0.24987798926305516,
+      "precision": 0.1725067385444744,
+      "f1": 0.20410603946581624,
+      "alert_rate": 0.16202642209848236
+    },
+    {
+      "threshold": 0.25,
+      "recall": 0.17276720351390923,
+      "precision": 0.19197396963123645,
+      "f1": 0.18186488569226816,
+      "alert_rate": 0.10066601157331587
+    },
+    {
+      "threshold": 0.3,
+      "recall": 0.12005856515373353,
+      "precision": 0.2106164383561644,
+      "f1": 0.15293751942803854,
+      "alert_rate": 0.06376241947810897
+    },
+    {
+      "threshold": 0.35,
+      "recall": 0.07906295754026355,
+      "precision": 0.2180349932705249,
+      "f1": 0.11604584527220631,
+      "alert_rate": 0.04056119663718746
+    },
+    {
+      "threshold": 0.4,
+      "recall": 0.05514885309907272,
+      "precision": 0.23443983402489627,
+      "f1": 0.08929276965626234,
+      "alert_rate": 0.026312916257233324
+    },
+    {
+      "threshold": 0.45,
+      "recall": 0.03904343582235237,
+      "precision": 0.2476780185758514,
+      "f1": 0.06745362563237774,
+      "alert_rate": 0.01763292935910034
+    },
+    {
+      "threshold": 0.5,
+      "recall": 0.028306490971205467,
+      "precision": 0.2761904761904762,
+      "f1": 0.051350154935812305,
+      "alert_rate": 0.011464133639043564
+    },
+    {
+      "threshold": 0.55,
+      "recall": 0.01903367496339678,
+      "precision": 0.2826086956521739,
+      "f1": 0.03566529492455418,
+      "alert_rate": 0.0075335735342286275
+    },
+    {
+      "threshold": 0.6,
+      "recall": 0.015129331381161543,
+      "precision": 0.34065934065934067,
+      "f1": 0.02897196261682243,
+      "alert_rate": 0.004967791243585544
+    },
+    {
+      "threshold": 0.65,
+      "recall": 0.011224987798926306,
+      "precision": 0.3770491803278688,
+      "f1": 0.021800947867298578,
+      "alert_rate": 0.003330057866579321
+    },
+    {
+      "threshold": 0.7,
+      "recall": 0.007320644216691069,
+      "precision": 0.40540540540540543,
+      "f1": 0.014381591562799617,
+      "alert_rate": 0.0020198711649743423
+    },
+    {
+      "threshold": 0.75,
+      "recall": 0.005856515373352855,
+      "precision": 0.48,
+      "f1": 0.011571841851494697,
+      "alert_rate": 0.0013647778141718527
+    },
+    {
+      "threshold": 0.8,
+      "recall": 0.004392386530014641,
+      "precision": 0.5625,
+      "f1": 0.008716707021791767,
+      "alert_rate": 0.0008734578010699859
+    },
+    {
+      "threshold": 0.85,
+      "recall": 0.002440214738897023,
+      "precision": 0.7142857142857143,
+      "f1": 0.0048638132295719845,
+      "alert_rate": 0.00038213778796811876
+    },
+    {
+      "threshold": 0.9,
+      "recall": 0.0004880429477794046,
+      "precision": 0.5,
+      "f1": 0.0009751340809361287,
+      "alert_rate": 0.00010918222513374823
+    }
+  ],
+  "experiment_c_subgroup_analysis": {
+    "age_bin": [
+      {
+        "group": "age <20",
+        "n": 154,
+        "recall": 0.8,
+        "precision": 0.05970149253731343,
+        "alert_rate": 0.43506493506493504
+      },
+      {
+        "group": "age 20-39",
+        "n": 933,
+        "recall": 0.8347107438016529,
+        "precision": 0.17206132879045996,
+        "alert_rate": 0.6291532690246516
+      },
+      {
+        "group": "age 40-59",
+        "n": 4883,
+        "recall": 0.8473895582329317,
+        "precision": 0.12463083284111046,
+        "alert_rate": 0.6934261724349785
+      },
+      {
+        "group": "age 60-79",
+        "n": 8753,
+        "recall": 0.8466195761856711,
+        "precision": 0.12039029989955517,
+        "alert_rate": 0.7961841654289957
+      },
+      {
+        "group": "age 80+",
+        "n": 3595,
+        "recall": 0.8571428571428571,
+        "precision": 0.12152891212022215,
+        "alert_rate": 0.8514603616133519
+      }
+    ],
+    "gender": [
+      {
+        "group": "Female",
+        "n": 9820,
+        "recall": 0.8605898123324397,
+        "precision": 0.12532535137948986,
+        "alert_rate": 0.7824847250509165
+      },
+      {
+        "group": "Male",
+        "n": 8498,
+        "recall": 0.8333333333333334,
+        "precision": 0.12135922330097088,
+        "alert_rate": 0.7514709343374911
+      }
+    ],
+    "admission_type": [
+      {
+        "group": "Elective",
+        "n": 3377,
+        "recall": 0.7803468208092486,
+        "precision": 0.11764705882352941,
+        "alert_rate": 0.6795972756884809
+      },
+      {
+        "group": "Emergency",
+        "n": 9768,
+        "recall": 0.8593886462882097,
+        "precision": 0.12852664576802508,
+        "alert_rate": 0.7837837837837838
+      },
+      {
+        "group": "Newborn",
+        "n": 1,
+        "recall": 0.0,
+        "precision": 0.0,
+        "alert_rate": 1.0
+      },
+      {
+        "group": "Unknown",
+        "n": 1859,
+        "recall": 0.8941798941798942,
+        "precision": 0.11133069828722003,
+        "alert_rate": 0.8165680473372781
+      },
+      {
+        "group": "Urgent",
+        "n": 3313,
+        "recall": 0.8536585365853658,
+        "precision": 0.12115384615384615,
+        "alert_rate": 0.7847872019317839
+      }
+    ]
+  },
+  "target_recall": 0.85,
+  "min_acceptable_precision": 0.05,
+  "min_acceptable_precision_note": "experimental safety floor, NOT clinically validated",
+  "random_state": 42,
+  "known_limitations": [
+    "Random stratified split \u2014 NOT patient-level or temporal. Multiple encounters from same patient may cross splits.",
+    "SMOTE applied to encoded categoricals \u2014 may create fractional category values.",
+    "Prediction time is discharge; admission-time prediction is V4.",
+    "Process-local threshold in multi-worker deployments."
+  ]
+}
